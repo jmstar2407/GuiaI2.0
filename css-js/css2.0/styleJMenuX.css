@@ -1,1 +1,448 @@
+@import './Necesario3.css';
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+scrollbar-width: thin;
+scrollbar-color: #1f293c #8f8f8f;
+}
+
+
+a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  font-family: sans-serif;
+}
+a:hover {
+  cursor: pointer;
+}
+
+#side-nav1 {
+  width: 216px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px 2px rgb(0 0 0 / 74%);
+  transition: width 0.5s ease-out;
+  -webkit-animation: animate-width 1.2s 1 ease-in-out;
+          animation: animate-width 1.2s 1 ease-in-out;
+          position: absolute;
+          left: 10%;
+          top: 17%;
+          border-radius: 11px;
+          backdrop-filter: blur(13px);
+          z-index: 10;
+}
+
+.Cuadro-GENERAL {
+    position: absolute;
+    /* position: relative; */
+    /* position: fixed; */
+    background: #00000000;
+    top: 8px;
+    left: 132px;
+    width: 814px;
+    width: 80vw;
+    height: 799px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1027px;
+}
+
+.Cuadro-menu-arriba {
+    position: relative;
+    background: #00000000;
+    top: 10px;
+    width: 814px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Cuadro-menu-arriba2 {
+    position: relative;
+    background: #00000000;
+    top: 10px;
+    width: 814px;
+    height: 460px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Barra1 {
+    width: 100%;
+    min-width: 1100px;
+    height: 50px;
+    background: #1a1a1ab8;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    backdrop-filter: blur(7px);
+}
+
+.Barra2 {
+  width: 2px;
+  height: 30px;
+  background: #b3b3b3;
+  position: absolute;
+  left: 253px;
+  top: 12px;
+  backdrop-filter: blur(11px);
+}
+.Barra3 {
+  width: 100%;
+  min-width: 1100px;
+  height: 2px;
+  background: linear-gradient(to right, #709AD1 0%, #3ed8b5 100%);
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  backdrop-filter: blur(11px);
+}
+
+.Barra4 {
+    width: 100px;
+    height: 47px;
+    background: #00000000;
+    position: absolute;
+    right: 10px;
+    top: 1px;
+}
+
+.BarraDownMaster {
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff00;
+  min-height: 1027px;
+}
+
+.BarraDown1 {
+  width: 100%;
+  min-width: 1100px;
+  height: 50px;
+  background: #1a1a1ab8;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  backdrop-filter: blur(7px);
+}
+
+.BarraDown2 {
+  width: 100%;
+  min-width: 1100px;
+  height: 1px;
+  background: linear-gradient(to right, #709AD1 0%, #3ed8b5 100%);
+  position: absolute;
+  left: 0px;
+  bottom: 50px;
+  backdrop-filter: blur(7px);
+}
+
+.BotonesBackground {
+  position: absolute;
+  height: 128px;
+  width: 40px;
+  top: 83px;
+  right: 0px;
+  background: #ff000000;
+}
+
+.cuadrado58585 {
+  width: 1360px;
+  height: 468px;
+  top: 49px;
+  left: 0px;
+  background: #aaa0;
+  position: absolute;
+}
+
+
+.TODOJM {
+ 
+}
+
+
+.logo-claro {
+  width: 100px;
+  height: 97px;
+  position: absolute;
+  right: 10px;
+  top: -17px;
+}
+
+.logo-claroN1 {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  right: 9px;
+  bottom: -16px;
+}
+
+.logo-claroN2 {
+  width: 64px;
+  height: 65px;
+  position: absolute;
+  right: 3px;
+  top: 532px;
+}
+.Barramenu {
+  width: 48px;
+  height: 288px;
+  background: #76767642;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.PuntoProxy {
+    width: 7px;
+    height: 7px;
+    background: #ff0000c4;
+    position: relative;
+    border-radius: 10px;
+    left: 210px;
+    top: -20px;
+}
+.Barramenu2 {
+  width: 48px;
+  height: 288px;
+  background: #76767642;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+#side-nav1.width {
+  width: 48px;
+}
+#side-nav1.width ul li a span {
+  opacity: 0;
+  right: 0;
+}
+#side-nav1.width ul .selected ul {
+  position: absolute;
+  right: -8rem;
+  width: 8rem;
+  top: 0;
+  display: none;
+  left: auto;
+  -webkit-animation: none;
+          animation: none;
+}
+#side-nav1.width ul .selected:hover ul {
+  display: block;
+}
+#side-nav1 > ul > li {
+  display: block;
+  min-height: 48px;
+  font-weight: bold;
+  font-size: 0.76em;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+#side-nav1 > ul > li:hover, #side-nav > ul > li.selected {
+  background: rgba(0, 0, 0, 0.1);
+}
+#side-nav1 > ul > li:hover > a {
+  color: #cd0000;
+  transition: color 0.2s;
+}
+#side-nav1 > ul > li:hover ul {
+  display: block;
+}
+#side-nav1 > ul > li.selected ul {
+  display: block;
+  left: 0;
+  position: relative;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  -webkit-animation: animate-height 1.2s 1 ease-in-out;
+  animation: animate-height 1.2s 1 ease-in-out;
+  position:absolute;
+  left: 6%;
+  top: 24%;
+}
+#side-nav1 > ul > li .fa {
+  font-size: 1.1rem;
+  padding: 14px;
+}
+#side-nav1 > ul > li a {
+  height: inherit;
+  display: block;
+}
+#side-nav1 > ul > li span {
+  position: absolute;
+  right: 0;
+  height: inherit;
+  padding: 17px 0 0 0;
+  left: 53px;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 0.5s;
+  font-size: 15px;
+}
+
+#side-nav1 > ul li ul {
+  position: absolute;
+  right: -14rem;
+  background: rgba(0, 0, 0, 0.5);
+  width: 14rem;
+  top: 0;
+  display: none;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+ul li ul li {
+  display: inline;
+}
+ul li ul li a {
+  display: block;
+  padding: 1em;
+}
+#side-nav1 > ul li ul li a:hover {
+  color: #cd0000;
+  transition: color 0.2s;
+}
+
+#logo1 {
+  height: 70px;
+  background: #0308128f;
+  display: block;
+  width: 100%;
+  position: relative;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+}
+#logo1:before {
+  background: linear-gradient(to right, #709AD1 0%, #3ed8b5 100%);
+  height: 2px;
+  display: block;
+  content: "";
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+#logo1 .fa {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -24px;
+  bottom: 0;
+  margin: auto;
+  color: #fff;
+  font-size: 1.625em;
+  display: block;
+  width: 26px;
+  height: 26px;
+}
+
+
+
+
+
+
+#toggle {
+  width: 48px;
+  height: 24px;
+  display: block;
+  <!-- padding: 16px; -->
+}
+
+
+
+#toggle:hover {
+  /*transform: scale(0.9);*/
+}
+
+
+.div1 {
+	position: relative;
+  }
+  
+  .div1 .div2 {
+	position: absolute;  
+	top: 0;  
+	left: 0;
+	opacity: 0;
+	transition: .5s;
+  }
+  
+  .div1:hover .div2 {
+	opacity: 1;
+  }
+
+
+.JMhover {
+  position: absolute;
+  left: 288px;
+  top: 20px;
+}
+
+.JMhover a:hover {
+color: #3ed8b5;
+/*filter: drop-shadow(0px 0px 7px #4dc5be);*/
+}
+
+
+
+::-webkit-scrollbar {
+    background: #8f8f8f;
+    width: 10px;
+  }
+  
+::-webkit-scrollbar-thumb {
+    width: 7px;
+    background: #1f293c;
+    border-radius: 3px;
+  }
+
+::-webkit-scrollbar-thumb:hover {
+    width: 7px;
+    background: #161d2a;
+    border-radius: 3px;
+  }
+
+
+
+@-webkit-keyframes animate-width {
+  0%, 40% {
+    width: 48px;
+  }
+  100% {
+    width: 216px;
+  }
+}
+
+@keyframes animate-width {
+  0%, 40% {
+    width: 48px;
+  }
+  100% {
+    width: 216px;
+  }
+}
+@-webkit-keyframes animate-height {
+  0%, 40% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes animate-height {
+  0%, 40% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@-webkit-keyframes rotate {}
+@keyframes rotate {}
+
 
