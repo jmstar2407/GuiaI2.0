@@ -1,0 +1,201 @@
+@import './Necesario3.css';
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+a:hover {
+  cursor: pointer;
+}
+
+#side-nav3 {
+  width: 216px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px 2px rgb(0 0 0 / 74%);
+  transition: width 0.5s ease-out;
+  -webkit-animation: animate-width 1.2s 1 ease-in-out;
+          animation: animate-width 1.2s 1 ease-in-out;
+          position: absolute;
+          right: 10%;
+          bottom: 65px;
+          border-radius: 11px;
+          backdrop-filter: blur(13px);
+}
+#side-nav3.width3 {
+  width: 48px;
+}
+#side-nav3.width3 ul li a span {
+  opacity: 0;
+  right: 0;
+}
+#side-nav3.width3 ul .selected ul {
+  position: absolute;
+  right: -8rem;
+  width: 8rem;
+  top: 0;
+  display: none;
+  left: auto;
+  -webkit-animation: none;
+          animation: none;
+}
+#side-nav3.width3 ul .selected:hover ul {
+  display: block;
+}
+#side-nav3 > ul > li {
+  display: block;
+  min-height: 48px;
+  font-weight: bold;
+  font-size: 0.76em;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+#side-nav3 > ul > li:hover, #side-nav3 > ul > li.selected {
+  background: rgba(0, 0, 0, 0.1);
+}
+#side-nav3 > ul > li:hover > a {
+  color: #3ed8b5;
+  transition: color 0.2s;
+}
+#side-nav3 > ul > li:hover ul {
+  display: block;
+}
+#side-nav3 > ul > li.selected ul {
+  display: block;
+  left: 0;
+  position: relative;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  -webkit-animation: animate-height 1.2s 1 ease-in-out;
+  animation: animate-height 1.2s 1 ease-in-out;
+  position:absolute;
+  left: 6%;
+  top: 24%;
+}
+#side-nav3 > ul > li .fa {
+  font-size: 1.1rem;
+  padding: 14px;
+}
+#side-nav3 > ul > li a {
+  height: inherit;
+  display: block;
+}
+#side-nav3 > ul > li span {
+  position: absolute;
+  right: 0;
+  height: inherit;
+  padding: 17px 0 0 0;
+  left: 55px;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 0.5s;
+  font-size: 15px;
+}
+
+#side-nav3 > ul li ul {
+  position: absolute;
+  right: -14rem;
+  background: rgba(0, 0, 0, 0.5);
+  width: 14rem;
+  top: 0;
+  display: none;
+  text-align: center;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+ul li ul li {
+  display: inline;
+}
+ul li ul li a {
+  display: block;
+  padding: 1em;
+}
+ul li ul li a:hover {
+  color: #3ed8b5;
+  transition: color 0.2s;
+}
+
+#logo3er {
+  height: 70px;
+  background: #0308128f;
+  display: block;
+  width: 100%;
+  position: relative;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+}
+#logo3er:before {
+  background: linear-gradient(to right, #709AD1 0%, #3ed8b5 100%);
+  height: 2px;
+  display: block;
+  content: "";
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+#logo3er .fa {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -24px;
+  bottom: 0;
+  margin: auto;
+  color: #fff;
+  font-size: 1.625em;
+  display: block;
+  width: 26px;
+  height: 26px;
+}
+
+#toggle3er {
+  width: 48px;
+  height: 24px;
+  display: block;
+  <!-- padding: 16px; -->
+}
+
+#toggle3er:hover {
+  /*transform: scale(0.9);*/
+}
+
+@-webkit-keyframes animate-width {
+  0%, 40% {
+    width: 48px;
+  }
+  100% {
+    width: 216px;
+  }
+}
+
+@keyframes animate-width {
+  0%, 40% {
+    width: 48px;
+  }
+  100% {
+    width: 216px;
+  }
+}
+@-webkit-keyframes animate-height {
+  0%, 40% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes animate-height {
+  0%, 40% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@-webkit-keyframes rotate {}
+@keyframes rotate {}

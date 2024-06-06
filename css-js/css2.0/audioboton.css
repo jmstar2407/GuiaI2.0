@@ -1,0 +1,21 @@
+body {
+  /* background-color: turquoise; */
+}
+
+#hoverID {
+  display: block;
+  width: 400px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+
+.JMhover {
+  position: absolute;
+  left: 288px;
+  top: 20px;
+}
+
+.JMhover a:hover {
+color: #3ed8b5;
+}
